@@ -4,7 +4,7 @@ import { IResults } from 'src/app/interfaces/characters';
 @Component({
   selector: 'app-grid-card',
   templateUrl: './grid-card.component.html',
-  styleUrls: ['./grid-card.component.sass'],
+  styleUrls: ['./grid-card.component.scss'],
 })
 export class GridCardComponent implements OnInit{
   //dato que se le injecta a GridCardComponent
