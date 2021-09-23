@@ -1,0 +1,8 @@
+<section class="search__section">
+    <form (ngSubmit)="onSubmit()" class="materialForm" #newForm="ngForm" [formGroup]="collectionForm">
+        <mat-form-field class="formField" appearance="outline">
+                <input matInput formControlName="keyword" placeholder="Ingrese nombre, especie o palabra clave">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </form>
+</section>

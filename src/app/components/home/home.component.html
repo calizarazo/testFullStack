@@ -1,0 +1,12 @@
+
+
+<div class="content" class="layout">
+  <app-search [listData]="characters" (updateList)="getNewData($event)"></app-search>
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <mat-spinner *ngIf="characters.length === 0"></mat-spinner>
+    <h1 *ngIf="filterCharacters.length === 0">No Data</h1>
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let data of filterCharacters">
+      <app-grid-card [dataCharacter]="data"> </app-grid-card>
+    </div>
+  </div>
+</div>
